@@ -3,3 +3,11 @@ body {
     background-image: url(../img/Address_book_6.jpg);
     color: white;
 }
+
+#contact_form, #delete_contacts {
+    color: black;
+}
+
+.container {
+    margin: 10%;
+}
