@@ -20,11 +20,11 @@
         return $app['twig']->render('home.html.twig');
     });
 
-    $app->post("/create_contact", function() use ($app) {
+    $app->get("/create_contact", function() use ($app) {
         return $app['twig']->render('create_contact.html.twig');
     });
 
-    $app->post("/delete_contacts", function() use ($app) {
+    $app->get("/delete_contacts", function() use ($app) {
         return $app['twig']->render('delete_contacts.html.twig');
     });
 
