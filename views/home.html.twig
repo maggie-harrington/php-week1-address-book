@@ -4,5 +4,25 @@
     </head>
     <body>
         <h1>Address Book</h1>
+
+        <h3>Add a contact:</h3>
+
+        <form action='/create_contact' method='post'>
+            <label for='name'>Name:</label>
+            <input id='name' name='name' type='text'>
+            <br><br>
+
+            <label for='phone'>Phone:</label>
+            <input id='phone' name='phone' type='text'>
+            <br><br>
+
+            <label for='address'>Address:</label>
+            <input id='address' name='address' type='text'>
+            <br><br>
+
+            <button type='submit'>Add Contact</button>
+        </form>
+ 
+
     </body>
 </html>
