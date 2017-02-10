@@ -2,10 +2,41 @@ body {
     background-color: #d4ccc4;
     background-image: url(../img/Address_book_6.jpg);
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-#contact_form, #delete_contacts {
+h1 {
+    font-weight: 600;
+    font-size: 50pt;
+    margin-bottom: 5%;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 25pt;
+    color: #eae6e1;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 18pt;
+}
+
+li {
+    font-weight: 300;
+    font-size: 16pt;
+    color: #d4ccc4;
+}
+
+#contact_form {
     color: black;
+    font-size: 14pt;
+}
+
+#delete_contacts {
+    color: black;
+    font-size: 14pt;
+    margin-bottom: 5%;
 }
 
 .container {
