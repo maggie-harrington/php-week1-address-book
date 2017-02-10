@@ -24,7 +24,7 @@ _If you run into any issues or have questions, ideas or concerns, please feel fr
 
 ## Technologies Used
 
-_Written using Git Bash, Atom, Composer, Silex, and Twig._
+_Written using Git Bash, Atom, Composer, Silex, Twig, and Bootstrap._
 
 ### MIT License
 
