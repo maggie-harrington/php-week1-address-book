@@ -17,14 +17,17 @@
     $app ['debug'] = true;
 
     $app->get("/", function() use ($app) {
-        return $app['twig']->render('home.html.twig');
+        return $app['twig']->render('home.html.twig', array('list_of_contacts' => Contact::getAll()));
     });
 
     $app->get("/create_contact", function() use ($app) {
-        return $app['twig']->render('create_contact.html.twig');
+        $contact = new Contact($_POST['name'], $_POST['phone'], $_POST['address']);
+        $contact->save();
+        return $app['twig']->render('create_contact.html.twig', array('new_contact' => $contact));
     });
 
     $app->get("/delete_contacts", function() use ($app) {
+        Contact::deleteAll();
         return $app['twig']->render('delete_contacts.html.twig');
     });
 
