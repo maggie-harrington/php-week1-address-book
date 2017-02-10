@@ -13,10 +13,12 @@
                 {% for contact in list_of_contacts %}
                     <li>{{ contact.getName }}</li>
                     <li>{{ contact.getPhone }}</li>
+                    <li>{{ contact.getEmail }}</li>
                     <li>{{ contact.getAddress }}</li>
                     <br>
                 {% endfor %}
                 </ul>
+
                 <form action='/delete_contacts' method='post'>
                     <button type='submit'>Delete All Contacts</button>
                 </form>
@@ -24,6 +26,7 @@
             {% endif %}
 
             <h3>Add a contact:</h3>
+            <br>
 
             <form action='/create_contact' method='post'>
                 <label for='name'>Name:</label>
@@ -32,6 +35,10 @@
 
                 <label for='phone'>Phone:</label>
                 <input id='phone' name='phone' type='text'>
+                <br><br>
+
+                <label for='email'>Email:</label>
+                <input id='email' name='email' type='text'>
                 <br><br>
 
                 <label for='address'>Address:</label>

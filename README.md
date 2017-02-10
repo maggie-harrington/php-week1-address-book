@@ -6,7 +6,7 @@
 
 ## Description
 
-_A website written in PHP that allows the user to add the name, phone number, and address of their contacts, one at a time. Each time a contact is added, the user will be routed to the create_contact view, which displays the most recently added contact info back to the user. A link at the bottom of create_contact will return the user to the home view, which will now display a list of all contacts in addition to the create contact form. A delete All Contacts button at the bottom of the home view will route the user to the delete_contacts view, which informs the user that their address book has been cleared and displays a link to return to the home view._
+_A website written in PHP that allows the user to add the name, phone number, email, and address of their contacts, one at a time. Each time a contact is added, the user will be routed to the create_contact view, which displays the most recently added contact info back to the user. A link at the bottom of create_contact will return the user to the home view, which will now display a list of all contacts in addition to the create contact form. A delete All Contacts button at the bottom of the home view will route the user to the delete_contacts view, which informs the user that their address book has been cleared and displays a link to return to the home view._
 
 ## Setup/Installation Requirements
 
