@@ -17,6 +17,10 @@
                     <br>
                 {% endfor %}
                 </ul>
+                <form action='/delete_contacts' method='post'>
+                    <button type='submit'>Delete All Contacts</button>
+                </form>
+                <br>
             {% endif %}
 
             <h3>Add a contact:</h3>
@@ -37,9 +41,6 @@
                 <button type='submit'>Add Contact</button>
             </form>
 
-            <form action='/delete_contacts' method='post'>
-                <button type='submit'>Delete All Contacts</button>
-            </form>
         </div>
     </body>
 </html>
