@@ -26,15 +26,15 @@ h4 {
 li {
     font-weight: 300;
     font-size: 16pt;
-    color: #d4ccc4;
+    color: #c9bfb5;
 }
 
-#contact_form {
+#contact-form {
     color: black;
     font-size: 14pt;
 }
 
-#delete_contacts {
+#delete-contacts {
     color: black;
     font-size: 14pt;
     margin-bottom: 5%;
@@ -42,4 +42,24 @@ li {
 
 .container {
     margin: 10%;
+}
+
+.contact-name {
+    font-weight: 400;
+    font-size: 18pt;
+    color: #d4ccc4;
+}
+
+input[type=text] {
+    background-color: #eae6e1;
+}
+
+#contact-form button[type=submit] {
+    background-color: #708ca9;
+    color: white;
+}
+
+#delete-contacts button[type=submit] {
+    background-color: #c08b59;
+    color: white;
 }

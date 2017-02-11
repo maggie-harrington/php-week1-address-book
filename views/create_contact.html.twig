@@ -9,8 +9,8 @@
         <div class='container'>
             <h1>Address Book</h1>
             <h3>You've added a contact:</h3>
+            <p class='contact-name'>{{ new_contact.getName }}</p>
             <ul>
-                <li>{{ new_contact.getName }}</li>
                 <li>{{ new_contact.getPhone }}</li>
                 <li>{{ new_contact.getEmail }}</li>
                 <li>{{ new_contact.getAddress }}</li><br>

@@ -13,7 +13,7 @@
                 <h3>Add a contact:</h3>
                 <br>
 
-                <form action='/create_contact' method='post' id="contact_form">
+                <form action='/create_contact' method='post' id="contact-form">
                     <input id='name' name='name' type='text' placeholder=' name'>
                     <br><br>
 
@@ -26,7 +26,7 @@
                     <input id='address' name='address' type='text' placeholder=' address'>
                     <br><br><br>
 
-                    <button type='submit' class='btn btn-primary btn-lg active'><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Add Contact</button>
+                    <button type='submit' class='btn btn-lg'><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Add Contact</button>
                 </form>
             </div>
 
@@ -36,18 +36,19 @@
                 {% if list_of_contacts is not empty %}
                     <h3>Contacts:</h3>
                     <br>
-                    <ul>
                     {% for contact in list_of_contacts %}
-                        <li>{{ contact.getName }}</li>
-                        <li>{{ contact.getPhone }}</li>
-                        <li>{{ contact.getEmail }}</li>
-                        <li>{{ contact.getAddress }}</li>
+                    <p class='contact-name'>{{ contact.getName }}</p>
+                        <ul>
+                            <li>{{ contact.getPhone }}</li>
+                            <li>{{ contact.getEmail }}</li>
+                            <li>{{ contact.getAddress }}</li>
+                        </ul>
                         <br>
                     {% endfor %}
-                    </ul>
 
-                    <form action='/delete_contacts' method='post' id="delete_contacts">
-                        <button type='submit' class='btn btn-danger btn-lg active'><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete All Contacts</button>
+
+                    <form action='/delete_contacts' method='post' id="delete-contacts">
+                        <button type='submit' class='btn btn-lg'><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete All Contacts</button>
                     </form>
                 {% endif %}
             </div>
