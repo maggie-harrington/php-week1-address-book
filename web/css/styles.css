@@ -29,6 +29,31 @@ li {
     color: #c9bfb5;
 }
 
+footer {
+    font-weight: 300;
+    font-size: 14pt;
+    color: #c9bfb5;
+    display: block;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+}
+
+input[type=text] {
+    background-color: #eae6e1;
+}
+
+#contact-form button[type=submit] {
+    background-color: #708ca9;
+    color: white;
+}
+
+#delete-contacts button[type=submit] {
+    background-color: #c08b59;
+    color: white;
+}
+
 #contact-form {
     color: black;
     font-size: 14pt;
@@ -48,29 +73,4 @@ li {
     font-weight: 400;
     font-size: 18pt;
     color: #d4ccc4;
-}
-
-input[type=text] {
-    background-color: #eae6e1;
-}
-
-#contact-form button[type=submit] {
-    background-color: #708ca9;
-    color: white;
-}
-
-#delete-contacts button[type=submit] {
-    background-color: #c08b59;
-    color: white;
-}
-
-footer {
-    font-weight: 300;
-    font-size: 14pt;
-    color: #c9bfb5;
-    display: block;
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    bottom: 0%;
 }

@@ -5,6 +5,7 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         <title>Address Book</title>
     </head>
+
     <body>
         <div class='container'>
             <h1>Address Book</h1>
@@ -12,7 +13,6 @@
             <div class='col-md-6'>
                 <h3>Add a contact:</h3>
                 <br>
-
                 <form action='/create_contact' method='post' id="contact-form">
                     <input id='name' name='name' type='text' placeholder=' name'>
                     <br><br>
@@ -30,14 +30,13 @@
                 </form>
             </div>
 
-
             <div class='col-md-6'>
-
                 {% if list_of_contacts is not empty %}
                     <h3>Contacts:</h3>
                     <br>
+
                     {% for contact in list_of_contacts %}
-                    <p class='contact-name'>{{ contact.getName }}</p>
+                        <p class='contact-name'>{{ contact.getName }}</p>
                         <ul>
                             <li>{{ contact.getPhone }}</li>
                             <li>{{ contact.getEmail }}</li>
@@ -45,7 +44,6 @@
                         </ul>
                         <br>
                     {% endfor %}
-
 
                     <form action='/delete_contacts' method='post' id="delete-contacts">
                         <button type='submit' class='btn btn-lg'><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete All Contacts</button>
