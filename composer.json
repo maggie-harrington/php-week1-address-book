@@ -1,6 +1,12 @@
 {
     "require": {
+        "phpunit/phpunit": "4.5.*",
+        "monolog/monolog": "^1.4",
         "silex/silex": "~1.1",
-        "twig/twig":"~1.0"
-    }
+        "twig/twig":"~1.0",
+        "symfony/twig-bridge": "^2"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+  }
 }
