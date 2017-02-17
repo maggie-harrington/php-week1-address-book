@@ -10,9 +10,11 @@ _A website written in PHP that allows the user to add the name, phone number, em
 
 ## Setup/Installation Requirements
 
-* _Visit this page at GitHub pages: http://maggie-harrington.github.io/php-week1-address-book ._
+* _Visit this page on Heroku: https://warm-ravine-41598.herokuapp.com/ ._
+
 * _Or download at my GitHub repository: https://github.com/maggie-harrington/php-week1-address-book ._
-* _If you choose to clone through GitHub, first open Git Bash, type "cd Desktop" and hit enter. Copy the link above, then type "git clone " and paste the link and hit enter. You will now have a copy of this project on your desktop. In Git Bash, type "cd php-week1-address-book/" and hit enter, then "composer install" and enter. Once the installation has finished, type "cd web" and enter, then "php -S localhost:8000" and enter. In your web browser, navigate to "localhost:8000", which will open the home page._
+* _If you choose to clone through GitHub, first make sure that you have PHP and Composer installed. See https://secure.php.net/ for details on installing PHP. Note: PHP is typically already installed on Macs. See https://getcomposer.org for details on installing Composer._
+* _Once the above installations are finished, open Git Bash, type "cd Desktop" and hit enter. Copy the link above (in the second bullet point), then type "git clone " and paste the link and hit enter. You will now have a copy of this project on your desktop. In Git Bash, type "cd php-week1-address-book/" and hit enter, then "composer install" and enter. Once the installation has finished, type "cd web" and enter, then "php -S localhost:8000" and enter. In your web browser, navigate to "localhost:8000", which will open the home page._
 
 ## Known Bugs
 
@@ -24,7 +26,7 @@ _If you run into any issues or have questions, ideas or concerns, please feel fr
 
 ## Technologies Used
 
-_Written using Git Bash, Atom, Composer, Silex, Twig, and Bootstrap._
+_Written using Git Bash, Atom, Composer, Silex, Twig, and Bootstrap. Published using Heroku._
 
 ### MIT License
 
